@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/MarkupAnnotations/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/MarkupAnnotations/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/MarkupAnnotations/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MarkupAnnotations/MainWindow.xaml.vb))
+<!-- default file list end -->
 #  How to create a text markup annotation and specify its properties 
 
 
