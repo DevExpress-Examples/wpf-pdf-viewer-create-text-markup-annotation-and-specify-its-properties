@@ -14,14 +14,17 @@ Namespace MarkupAnnotations
             viewer.OpenDocument("..\..\Demo.pdf")
 
             ' Handle the TextMarkupAnnotationCreating event to specify the annotation properties.
-            AddHandler viewer.TextMarkupAnnotationCreating, AddressOf Viewer_TextMarkupAnnotationCreating
+            AddHandler viewer.AnnotationCreating, AddressOf Viewer_TextMarkupAnnotationCreating
 
         End Sub
 
-        Private Sub Viewer_TextMarkupAnnotationCreating(ByVal d As DependencyObject, ByVal e As PdfTextMarkupAnnotationCreatingEventArgs)
-            e.Author = "John Smith"
-            e.Comment = "Note."
-            e.Color = System.Windows.Media.Color.FromRgb(229, 214, 0)
+        Private Sub Viewer_TextMarkupAnnotationCreating(ByVal d As DependencyObject, ByVal e As PdfAnnotationCreatingEventArgs)
+            If e.Builder.AnnotationType = PdfAnnotationType.Text OrElse e.Builder.AnnotationType = PdfAnnotationType.TextMarkup Then
+                Dim annotationBuilder As IPdfViewerMarkupAnnotationBuilder = e.Builder.AsMarkupAnnotationBuilder()
+                annotationBuilder.Author = "John Smith"
+                annotationBuilder.Contents = "Note."
+                annotationBuilder.Color = New PdfRGBColor(0.69, 0.75, 0.1)
+            End If
         End Sub
 
         Private Sub viewer_DocumentLoaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
