@@ -8,7 +8,14 @@
     xmlns:dxpdf="http://schemas.devexpress.com/winfx/2008/xaml/pdf">
     <Grid>
         
-        <dxpdf:PdfViewerControl x:Name="viewer" DocumentLoaded="viewer_DocumentLoaded" />
+        <dxpdf:PdfViewerControl x:Name="viewer" DocumentLoaded="viewer_DocumentLoaded">
+                <dxpdf:PdfViewerControl.MarkupToolsSettings>
+                    <dxpdf:PdfMarkupToolsSettings StickyNoteIconName="Help"
+                                                  StickyNoteColor="SkyBlue"
+                                                  TextHighlightColor="IndianRed"
+                                                  TextHighlightDefaultSubject="Spelling"/>
+                </dxpdf:PdfViewerControl.MarkupToolsSettings>
+            </dxpdf:PdfViewerControl>
 
     </Grid>
 </dx:ThemedWindow>
