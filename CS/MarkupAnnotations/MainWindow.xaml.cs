@@ -15,12 +15,12 @@ namespace MarkupAnnotations
             // Load a document.
             viewer.OpenDocument("..\\..\\Demo.pdf");
 
-            // Handle the TextMarkupAnnotationCreating event to specify the annotation properties.
-            viewer.AnnotationCreating += Viewer_TextMarkupAnnotationCreating;
+            // Handle the AnnotationCreating event to specify the annotation properties.
+            viewer.AnnotationCreating += Viewer_AnnotationCreating;
 
         }
 
-        private void Viewer_TextMarkupAnnotationCreating(DependencyObject d, PdfAnnotationCreatingEventArgs e)
+        private void Viewer_AnnotationCreating(DependencyObject d, PdfAnnotationCreatingEventArgs e)
         {
             if (e.Builder.AnnotationType == PdfAnnotationType.Text || e.Builder.AnnotationType == PdfAnnotationType.TextMarkup)
             {

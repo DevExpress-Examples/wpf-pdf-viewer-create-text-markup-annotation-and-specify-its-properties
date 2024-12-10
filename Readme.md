@@ -4,19 +4,17 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+#  PDF Viewer for WPF - Create a text markup annotation and specify its properties 
+
+This example shows how to create a markup annotation that highlights a selected text on a page. To create this annotation for a selected text, call one of the [PdfViewerControl.HighlightSelectedText](https://docs.devexpress.com/WPF/devexpress.xpf.pdfviewer.pdfviewercontrol.highlightselectedtext.overloads) overload methods.  
+  
+To specify the annotation properties when the markup annotation is being created, handle the [PdfViewerControl.AnnotationCreating](https://docs.devexpress.com/WPF/DevExpress.Xpf.PdfViewer.PdfViewerControl.AnnotationCreating) event.
+
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/MarkupAnnotations/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MarkupAnnotations/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/MarkupAnnotations/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MarkupAnnotations/MainWindow.xaml.vb))
-<!-- default file list end -->
-#  How to create a text markup annotation and specify its properties 
-
-
-This example shows how to create a markup annotation that highlights a selected text on a page. To create this annotation for a selected text, call one of the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.PdfViewer.PdfViewerControl.HighlightSelectedText.overloads">PdfViewerControl.HighlightSelectedText</a> overload methods. <br><br>To specify the annotation properties when the markup annotation is being created, handle the <a href="https://documentation.devexpress.com/WPF/DevExpress.Xpf.PdfViewer.PdfViewerControl.TextMarkupAnnotationCreating.event">PdfViewerControl.TextMarkupAnnotationCreating </a>event.
-
-<br/>
-
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
