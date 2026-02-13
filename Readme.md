@@ -17,7 +17,7 @@ To specify the annotation properties when the markup annotation is being creat
 * [MainWindow.xaml.cs](./CS/MarkupAnnotations/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MarkupAnnotations/MainWindow.xaml.vb))
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pdf-viewer-create-text-markup-annotation-and-specify-its-properties&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pdf-viewer-create-text-markup-annotation-and-specify-its-properties&~~~was_helpful=no)
 
